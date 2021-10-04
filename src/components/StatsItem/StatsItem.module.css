@@ -1,0 +1,19 @@
+.item {
+  flex-basis: 20%;
+  height: 100%;
+  border-top: 1px solid #457b9d;
+  padding-top: 5px;
+}
+.item:not(:last-child) {
+  border-right: 1px solid #457b9d;
+}
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font: size 14px;
+  color: #457b9d;
+}
+.percentage {
+  font-size: 20px;
+  font-weight: 500;
+}

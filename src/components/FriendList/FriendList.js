@@ -1,9 +1,9 @@
-import FriendListItem from '../FriendListItem/FriendListItem.js'
-import PropTypes from 'prop-types'
-
+import FriendListItem from '../FriendListItem/FriendListItem.js';
+import PropTypes from 'prop-types';
+import s from './FriendList.module.css';
 export function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={s.friendList}>
       {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem
           key={id}
@@ -13,15 +13,15 @@ export function FriendList({ friends }) {
         />
       ))}
     </ul>
-  )
+  );
 }
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
+      id: PropTypes.number,
       avatar: PropTypes.string,
       name: PropTypes.string,
       isOnline: PropTypes.bool,
     }),
   ),
-}
+};

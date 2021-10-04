@@ -1,6 +1,7 @@
+import s from './StatsItem.module.css';
 export const StatsItem = ({ label, percentage }) => (
-  <li className="item">
-    <span className="label">{label}</span>
-    <span className="percentage">{percentage}%</span>
+  <li className={s.item}>
+    <span className={s.label}>{label}</span>
+    <span className={s.percentage}>{percentage}%</span>
   </li>
-)
+);
